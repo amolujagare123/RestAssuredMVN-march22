@@ -11,7 +11,7 @@ public class UpdateUser {
 
         RestAssured.baseURI="http://localhost:80/chat/lhc_web/index.php/site_admin";
 
-        int userId = 89;
+        int userId = 90;
         String respUpdateUser = given().log().all().
                 auth().preemptive().basic("admin", "admin123")
                 .body("{\n" +
